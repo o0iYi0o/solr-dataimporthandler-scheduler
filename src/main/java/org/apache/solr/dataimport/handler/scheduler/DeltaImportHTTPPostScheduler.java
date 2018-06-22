@@ -14,6 +14,7 @@ public class DeltaImportHTTPPostScheduler extends BaseTimerTask {
     }
 
     public void run() {
+    	logger.info("************************* solr 增量更新  ******************");
         try {
             if ((this.server.length() == 0) || (this.webapp.length() == 0) || (this.params == null) || (this.params.length() == 0)) {
                 logger.warn("<index update process> Insuficient info provided for data import");

@@ -14,6 +14,7 @@ public class FullImportHTTPPostScheduler extends BaseTimerTask {
     }
 
     public void run() {
+    	logger.info("************************* solr 全量更新  ******************");
         try {
             if ((this.server.length() == 0) || (this.webapp.length() == 0) ||
                     (this.reBuildIndexParams == null) ||
